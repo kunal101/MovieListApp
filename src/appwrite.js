@@ -10,7 +10,7 @@ import {Client, Databases, ID, Query} from 'appwrite'
 
 const client = new Client()
             .setEndpoint(APPWRITE_ENDPOINT)
-            .setProject(test);
+            .setProject(PROJECT_ID);
 
 const database = new Databases(client);
 
