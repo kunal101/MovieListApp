@@ -5,7 +5,10 @@ import MovieCard from './components/MovieCard';
 import {useDebounce} from 'react-use'
 import { getTrendingMovies, updateSearchCount } from './appwrite';
 
+
+
 const API_BASE_URL = "https://api.themoviedb.org/3";
+
 
 const API_OPTIONS = {
   method: 'GET',
@@ -106,7 +109,6 @@ const App = () => {
                 <li key={movie.$id}>
                   <p>{index + 1}</p>
                   <img src={movie.poster_URL} alt={movie.title} />
-                  {console.log(movie)}
                 </li>
               ))}
             </ul>
